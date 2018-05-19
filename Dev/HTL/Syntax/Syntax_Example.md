@@ -31,41 +31,65 @@ Sightly attributes:
 
  2) data-sly-text : Replaces the content of HTML elements with the specified text.
 
-    Eg : <div data-sly-text= "${currentPage.title}">Title Page </div>
+    Eg : 
+   
+{::nomarkdown}   
+   <div data-sly-text= "${currentPage.title}">Title Page </div>
+{:/}
+
 
  3) data-sly-list : Repeats the child elements.
 
-    Eg: <ul data-sly-list="${[1,2,3,4]}">
+    Eg: 
+ {::nomarkdown}
+   <ul data-sly-list="${[1,2,3,4]}">
 		  <li>${item}</li>
 		</ul>
+{:/}
 
  4) data-sly-repeat : Repeats the same element
 
- 	Eg: <ul>
+ 	Eg: 
+ {::nomarkdown}
+   <ul>
  		 <li data-sly-repeat.child="currentPage.listChildren">${child.title}</li>
- 	    </ul>
+  </ul>
+ {:/}
  
  5) data-sly-test : To hide or show HTML element
 
- 	Eg : <div data-sly-test="${wcmmode.edit}"> This is edit mode </div>
+ 	Eg :
+{::nomarkdown} 	 
+   <div data-sly-test="${wcmmode.edit}"> This is edit mode </div>
+ {:/}
 
  6) data-sly-include : To include other file (jsp/html)
 
-    Eg: <sly data-sly-include="test.html"></sly>
+    Eg: 
+{::nomarkdown}
+    <sly data-sly-include="test.html"></sly>
+{:/}
 
  7) data-sly-resource : To include AEM components
 
- 	Eg: <sly data-sly-resource=${'par' @ resourceType = 'foundation/components/parsys' }>
+ 	Eg: 
+{::nomarkdown}
+ 	<sly data-sly-resource=${'par' @ resourceType = 'foundation/components/parsys' }>
  	    </sly>
+{:/}
 
  8) data-sly-use : To invoke helper file.
 
- 	Eg: <div data-sly-use.comp = "logic.js">
+ 	Eg: 
+{::nomarkdown}
+ <div data-sly-use.comp = "logic.js">
  		  ${comp.myTitle}
  		 </div>
+{:/}
 
  9) data-sly-call : Use to call/invoke client library in your compoennet
 
- 	Eg: data-sly-call="${clientlib.all @ categories='cq:jquery'}"
-
- 	
+ 	Eg: 
+{::nomarkdown}
+data-sly-call="${clientlib.all @ categories='cq:jquery'}"
+{:/}
