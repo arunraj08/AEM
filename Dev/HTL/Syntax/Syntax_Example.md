@@ -32,10 +32,7 @@ Sightly attributes:
  2) data-sly-text : Replaces the content of HTML elements with the specified text.
 
     Eg : 
-   
-{::nomarkdown}   
    <div data-sly-text= "${currentPage.title}">Title Page </div>
-{:/}
 
 
  3) data-sly-list : Repeats the child elements.
