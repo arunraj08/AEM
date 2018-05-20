@@ -1,4 +1,4 @@
-#Create custom Log File in AEM
+# Create custom Log File in AEM
 1) Navigate to sling > Log support.
     http://localhost:4502/system/console
 
@@ -7,14 +7,14 @@
 
 3)Save changes.
 
-##Adding Logger in JS:
+## Adding Logger in JS:
 1) Add log.info method and add the message to print in log fle.
    Ex :  log.info("#####Current Page Title : " + root.getTitle());
 
 
 2) when you open any page from your application, this script will run and create an entry in the trainin log flie. You can find this log file in the crx-quickstart-log folder.
 
-##Adding Logger in Java File:
+## Adding Logger in Java File:
 1) Import the Logger and LoggerFactory class in java file
      
     Ex: import org.slf4j.Logger;
