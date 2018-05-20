@@ -1,5 +1,5 @@
 # Create custom Log File in AEM
-1) Navigate to sling > Log support.
+1)Navigate to sling > Log support.
     http://localhost:4502/system/console
 
 2)Click on add new logger button at the bottom of the top panel.
