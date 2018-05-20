@@ -1,4 +1,4 @@
-#Rich text editor in touch UI dialog in AEM:
+# Rich text editor in touch UI dialog in AEM:
  
 I have covered how you can add rich text editory in touch ui dialog in aem.
 

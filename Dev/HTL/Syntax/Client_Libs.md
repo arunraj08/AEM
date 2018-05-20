@@ -37,3 +37,14 @@ Attributes
 
 3) Embed : Used to embed code form other libraries
     Ex: cl1 embeds cl2 = cl1 + cl2
+
+Steps to Create Client Lib:
+----------------------------
+
+1) Define a design
+
+2) Create Client library
+
+3) Calling client library
+
+4) Assign design to website

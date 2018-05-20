@@ -1,4 +1,4 @@
-#Editconfig in AEM
+# Editconfig in AEM
 
 - cq:editConfig is a node of type cq:editConfig.
 - It defines the edit properties of a component. It enables component to appear in the sidekick or siderail. It is used to configure how a component is edited.
