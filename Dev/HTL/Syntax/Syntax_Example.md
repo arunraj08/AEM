@@ -39,55 +39,55 @@ Sightly attributes:
  3) data-sly-list : Repeats the child elements.
 
     Eg: 
- {::nomarkdown}
+  ```html
    <ul data-sly-list="${[1,2,3,4]}">
 		  <li>${item}</li>
 		</ul>
-{:/}
+  ```
 
  4) data-sly-repeat : Repeats the same element
 
  	Eg: 
- {::nomarkdown}
+  ```html
    <ul>
  		 <li data-sly-repeat.child="currentPage.listChildren">${child.title}</li>
   </ul>
- {:/}
+ ```
  
  5) data-sly-test : To hide or show HTML element
 
  	Eg :
-{::nomarkdown} 	 
+ ```html 	 
    <div data-sly-test="${wcmmode.edit}"> This is edit mode </div>
- {:/}
+ ```
 
  6) data-sly-include : To include other file (jsp/html)
 
     Eg: 
-{::nomarkdown}
-    <sly data-sly-include="test.html"></sly>
-{:/}
+   ```html
+     <sly data-sly-include="test.html"></sly>
+   ```
 
  7) data-sly-resource : To include AEM components
 
  	Eg: 
-{::nomarkdown}
+  ```html
  	<sly data-sly-resource=${'par' @ resourceType = 'foundation/components/parsys' }>
  	    </sly>
-{:/}
+  ```
 
  8) data-sly-use : To invoke helper file.
 
  	Eg: 
-{::nomarkdown}
+ ```html
  <div data-sly-use.comp = "logic.js">
  		  ${comp.myTitle}
  		 </div>
-{:/}
+  ```
 
  9) data-sly-call : Use to call/invoke client library in your compoennet
 
  	Eg: 
-{::nomarkdown}
-data-sly-call="${clientlib.all @ categories='cq:jquery'}"
-{:/}
+  ```html
+  data-sly-call="${clientlib.all @ categories='cq:jquery'}"
+  ```
